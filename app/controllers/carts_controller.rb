@@ -37,8 +37,6 @@ class CartsController < ApplicationController
 
         # @order.update(merchantOrderNo: merchantOrderNo)
 
-
-        
       end
     
       # 新增部分-----

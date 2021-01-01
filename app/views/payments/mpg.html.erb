@@ -1,0 +1,12 @@
+<h1>連線到智付通...</h1>
+<form id="mpg_form" action="https://ccore.spgateway.com/MPG/mpg_gateway" accept-charset="UTF-8" method="post">
+  <input type='hidden' name='MerchantID' value='<%= @merchantID %>'>
+  <input type='hidden' name='TradeInfo' value='<%= @tradeInfo %>'>
+  <input type='hidden' name='TradeSha' value='<%= @tradeSha%>'>
+  <input type="hidden" name='Version' value='<%= @version %>'>
+</form>
+<script>
+  $(function(){
+    $("#mpg_form").submit();
+  })
+</script>
